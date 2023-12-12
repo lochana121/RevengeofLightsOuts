@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out!!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lights Out!</h1>
+    </header>
+    <div id="board"></div>
+    <p>Clicks: <a id="counter">0</a></p>
+    <button id="reset" onClick="window.location.reload();">Reset</button>
+    <footer>
+        <p> <b>Instructions</b></p>
+        <a>Click on a square to toggle its color and that of its neighbors. The goal is to turn all the squares white. If you get stuck, click the reset button to start over.
+            Good luck!</a>
+        <p> <b>Addendum</b></p>
+        <a>
+            The process of building this "Lights Out!" game involved various creative choices and challenges. Initially,
+            a simple grid of squares was created, each with a click event listener to toggle its color and that of its
+            neighbors. The initial challenge was to ensure the game started with a solvable configuration. This was
+            solved by implementing a backtracking algorithm that simulates random clicks until a solution is found. To
+            enhance user experience, a click counter and win condition with an alert were added. Further challenges
+            included optimizing the backtracking algorithm for efficiency and ensuring the game board remains solvable
+            after each click. These challenges were overcome by refining the algorithm and implementing checks for
+            neighboring squares. Throughout the process, insights were gained into the importance of user experience,
+            efficient algorithms, and robust error handling. Overall, the project provided a valuable learning
+            experience in applying JavaScript to create a fun and engaging game.</a>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
